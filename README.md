@@ -1,7 +1,7 @@
 # Html-Css-Dictionary
 
 
-[link zur Webseite] (https://leospace2017.github.io/HtmlCssDictionary/ "Dictionary Html/Css")
+[Dictionary Webseite] (https://leospace2017.github.io/HtmlCssDictionary/)
 ```
 Verzeichnis zum Html und CSS 
 
