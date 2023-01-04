@@ -38,7 +38,6 @@
                     <div class="dropdownh">                    
                         <a href="#h-basis">Basis</a>
                         <a href="#h-quell">Quell</a>
-
                         <a href="#h-form">Formular</a>
                         <a href="#h-text">Text</a>
                         <a href="#h-media">Audio/Video</a>
@@ -498,9 +497,9 @@
                         </tr>
                         <th>Bestimmtes Kind, Nicht auswählen, Ungerade/GeradeZahlen </th>
                         <tr>
-                            <td><code>:nth-child(nummer),not(selektor), odd/even </code></td>
-                            <td><samp>p:nth-child(1),not(nth-child(1)),p:nth-child(odd,even)</samp></td>
-                            <td><i>Der erstes Kind p auswählen, Dem ersten Kind p nicht auswählen, Ungerade oder Gerade p auswählen</i></td>
+                            <td><code>:nth-child(nummer),not(selektor), odd/even :nth-child((-/zahlen)n+nummer)</code></td>
+                            <td><samp>p:nth-child(1),not(nth-child(1)),p:nth-child(odd,even),p:nth-child(n+nummer)</samp></td>
+                            <td><i>Der erstes Kind p auswählen, Dem ersten Kind p nicht auswählen, Ungerade oder Gerade p auswählen, n+zeile steht für ab welche zeile man selektiert (-n+zeile steht für bis welche zeile/davor kann auch nummer stehen steht für ab jede zeile)</i></td>
                         </tr>
                             
                         <th>Erstes Kind, Letztes Kind, Erstes Type und letztes Type</th>
