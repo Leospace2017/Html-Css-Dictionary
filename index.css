@@ -1,416 +1,326 @@
-html
-{
-    scroll-behavior: smooth;
-    --pink: #EA047E;
-    --orange: #FF6D28;
-    --gelb: #FCE700;
-    --blau:green;  /* var(--name) */
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+html {
+  scroll-behavior: smooth;
+  --pink: #ea047e;
+  --orange: #ff6d28;
+  --gelb: #fce700;
+  --blau: green; /* var(--name) */
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
-
-h1,h2,h3,h4,h5,h6
-{
-    color:var(--gelb);
-
- 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--gelb);
 }
-:target
-{
-    border:2px solid #D4D4D4 ;
-    place-self: start center;
+:target {
+  border: 2px solid #d4d4d4;
+  place-self: start center;
 }
-a
-{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-code,samp,i,p
-{
-    font-size: 1.5vw;
+code,
+samp,
+i,
+p {
+  font-size: 1.5vw;
 }
-i::first-letter,p::first-letter,tr::first-letter
-{
-    text-transform:uppercase;
+i::first-letter,
+p::first-letter,
+tr::first-letter {
+  text-transform: uppercase;
 }
-samp
-{
-    width: fit-content;
-   
+samp {
+  width: fit-content;
 }
-i
-{
-    text-align: center;
-    
-    text-overflow: scroll;
+i {
+  text-align: center;
+
+  text-overflow: scroll;
 }
-h1
-{
-    margin-top: 0px ;
-    font-size: 3rem;
+h1 {
+  margin-top: 0px;
+  font-size: 3rem;
 }
-h2
-{
-    font-size: 2.5rem;
+h2 {
+  font-size: 2.5rem;
 }
-h3
-{
-    color: var(--blau);
-    font-size: 2rem;
+h3 {
+  color: var(--blau);
+  font-size: 2rem;
 }
- span
-{
-    color: white;
-    font-size: 2vw;
-    width: 70%;
-    text-align: center;
-    justify-self: center;
-    
+span {
+  color: white;
+  font-size: 2vw;
+  width: 70%;
+  text-align: center;
+  justify-self: center;
 }
 /* header */
-#netz
-{
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows: repeat(auto-fill,minmax(50px,max-content));
-    grid-auto-flow: row;
-    gap: 2px;
-    background-image: url(image/bg3.jpg);
-    background-attachment:fixed;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode:darken ;
-    
-  
+#netz {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(50px, max-content));
+  grid-auto-flow: row;
+  gap: 2px;
+  background-image: url(image/bg3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
 }
 
-
-#header
-{
-    
-    display: grid;
-    height: min-content;
-    place-self: center center;
-    margin-top: 5%;
-
+#header {
+  display: grid;
+  height: min-content;
+  place-self: center center;
+  margin-top: 5%;
 }
-#header div
-{
-    place-self: auto center;
+#header div {
+  place-self: auto center;
 }
 
-
-#header img
-{
-    max-width: 5vw;
-    height: auto;
-    border-radius: 50%;
-    justify-self: center;
+#header img {
+  max-width: 5vw;
+  height: auto;
+  border-radius: 50%;
+  justify-self: center;
 }
 
 /* navi */
-#nav 
-{
-    display:grid;
-    place-self: start end;
-    position: fixed;
-    width: 300px;
-    grid-template: auto/ repeat(4, 1fr);
+#nav {
+  display: grid;
+  place-self: start end;
+  position: fixed;
+  width: 300px;
+  grid-template: auto/ repeat(4, 1fr);
 }
 
-.dropdownH, .dropdownC , .dropdownH >button,.dropdownC >button
-{   
-    position: relative;
-    background-color: inherit;
-    border:none;
-    display: inline-block;
+.dropdownH,
+.dropdownC,
+.dropdownH > button,
+.dropdownC > button {
+  position: relative;
+  background-color: inherit;
+  border: none;
+  display: inline-block;
 }
 
-.dropdownc ,.dropdownh
-{
-    position: absolute;
-    display: none;
-    z-index: 1;
-
+.dropdownc,
+.dropdownh {
+  position: absolute;
+  display: none;
+  z-index: 1;
 }
 
-.dropdownc a,.dropdownh a
-{
-    text-decoration: none;
-    color: azure;
-    display: block;
-    text-align: left;
+.dropdownc a,
+.dropdownh a {
+  text-decoration: none;
+  color: azure;
+  display: block;
+  text-align: left;
 }
 
-.dropdownH:hover .dropdownh 
-{
-
-    display:block
-    
+.dropdownH:hover .dropdownh {
+  display: block;
 }
-.dropdownC:hover .dropdownc
-{
-    display: block;
+.dropdownC:hover .dropdownc {
+  display: block;
 }
 
-.dropdownc a:hover, .dropdownh a:hover
-{
-    opacity: 0.5;
+.dropdownc a:hover,
+.dropdownh a:hover {
+  opacity: 0.5;
 }
 
-button>img:hover
-{
-    opacity: 0.5;
+button > img:hover {
+  opacity: 0.5;
 }
 
-.navi:hover
-{
-    opacity: 0.5;
+.navi:hover {
+  opacity: 0.5;
 }
-
 
 /* responsive navi */
-@media only screen and (max-width:600px) {
-    h1{
-        color: red;
-    }
+@media only screen and (max-width: 600px) {
+  h1 {
+    color: red;
+  }
 
-    #nav
-    {
-        display:grid;
-        place-self: start end;
-        position: fixed;
-        justify-content: end;
-        width: 45vw;
-        grid-template: repeat(4,1fr)/ auto;
-        
-    }
+  #nav {
+    display: grid;
+    place-self: start end;
+    position: fixed;
+    justify-content: end;
+    width: 45vw;
+    grid-template: repeat(4, 1fr) / auto;
+  }
 
-    .dropdownh
-    {
-        display: grid;
-        position: absolute;
-        right:60%;
-        display: none;
-    }
-    .dropdownc
-    {
-        display: grid;
-        position: absolute;
-        right:60%;
-        display: none;
-    }
+  .dropdownh {
+    display: grid;
+    position: absolute;
+    right: 60%;
+    display: none;
+  }
+  .dropdownc {
+    display: grid;
+    position: absolute;
+    right: 60%;
+    display: none;
+  }
 
-    .dropdownH:hover .dropdownh
-    {
-        display: inline-block;
-    }
-    .dropdownC:hover .dropdownc
-    {
-        display: inline-block;
-    }
-
-    
+  .dropdownH:hover .dropdownh {
+    display: inline-block;
+  }
+  .dropdownC:hover .dropdownc {
+    display: inline-block;
+  }
 }
-
-
 
 /* content html */
-#main
-{
-    display: grid;
-    gap: 10px 20px;
-    grid-template: min-content min-content / 1fr;
-    margin: 20px 1%
+#main {
+  display: grid;
+  gap: 10px 20px;
+  grid-template: min-content min-content / 1fr;
+  margin: 20px 1%;
 }
 
-#html ,#css
-{
-    display: grid;
-    
-    grid: auto-flow  min-content/  1fr 1fr;
-    place-self: start center;
-    
+#html,
+#css {
+  display: grid;
+
+  grid: auto-flow min-content/ 1fr 1fr;
+  place-self: start center;
 }
 
-#html h2
-{
-
-    grid-area: 1/1/1/span 2;
-    place-self: end center;
-
-
+#html h2 {
+  grid-area: 1/1/1 / span 2;
+  place-self: end center;
 }
 
-[id |= h]
-{
-    display: grid;
-    gap: 15px;
-    place-self: start center;
-
+[id|="h"] {
+  display: grid;
+  gap: 15px;
+  place-self: start center;
 }
 
-[id |= c]
-{
-    display: grid;
-    gap: 20px 1%;
-    place-self: start center;
-    
-
+[id|="c"] {
+  display: grid;
+  gap: 20px 1%;
+  place-self: start center;
 }
-[id |= h] h3
-{
-    place-self: end center;
-
+[id|="h"] h3 {
+  place-self: end center;
 }
 
-[id |= c] h3
-{
-    place-self: end center;
+[id|="c"] h3 {
+  place-self: end center;
 }
 
-
-table tbody
-{
-    display: grid;
-
-
+table tbody {
+  display: grid;
 }
-tr:nth-child(odd)
-{
-    font-size: 1.5rem;
-    color: #FF6D28;
-    place-self: start center;
+tr:nth-child(odd) {
+  font-size: 1.5rem;
+  color: #ff6d28;
+  place-self: start center;
 }
 
-tr:nth-child(even)
-{
-    display: grid;
-    grid: repeat(3,1fr)/ 1fr;
-    margin-bottom: 30px;
-
+tr:nth-child(even) {
+  display: grid;
+  grid: repeat(3, 1fr) / 1fr;
+  margin-bottom: 30px;
 }
-tr td
-{
-
-    place-self: start center;
-    text-align: center;
+tr td {
+  place-self: start center;
+  text-align: center;
 }
 
-
-
-code
-{
-    color: var(--blau);
+code {
+  color: var(--blau);
 }
-samp
-{
-    color: var(--orange);
-    
+samp {
+  color: var(--orange);
 }
-i
-{
-    color: var(--pink);
+i {
+  color: var(--pink);
 }
 
 /* content css */
 
-
-
-
-#css>h2
-{
-    grid-area: auto /1/auto/  span 2;
-    place-self: start center;
+#css > h2 {
+  grid-area: auto / 1 / auto/ span 2;
+  place-self: start center;
 }
-
-
-
-
-
 
 /* reponsivie main */
 
-@media only screen and (max-width:600px) {
-    #html h2,#css h2
-    {
-        place-self: start center;
-        color: red;
-        grid-area: auto;
-  
-    }
-    #html ,#css
-    {
-        display: grid;
-        grid: auto-flow max-content / 0.9fr;
-    }
-    code,samp,i,p
-    {
-        font-size: 2.5vw;
-    }
-
+@media only screen and (max-width: 600px) {
+  #html h2,
+  #css h2 {
+    place-self: start center;
+    color: red;
+    grid-area: auto;
+  }
+  #html,
+  #css {
+    display: grid;
+    grid: auto-flow max-content / 0.9fr;
+  }
+  code,
+  samp,
+  i,
+  p {
+    font-size: 2.5vw;
+  }
 }
-
 
 /* footer */
-#footer
-{
-    display: grid;
-    width: 100%;
-    clear: both;
-}   
-
-#footer h2
-{
-    margin-top: 10%;
-    place-self: start center;
-    font-size: 2rem;
-    color: goldenrod;
-
+#footer {
+  display: grid;
+  width: 100%;
+  clear: both;
 }
 
-#footer div
-{
-    place-self: center center;
-    display: inline-block;
-
+#footer h2 {
+  margin-top: 10%;
+  place-self: start center;
+  font-size: 2rem;
+  color: goldenrod;
 }
 
-
-#time
-{
-    color: white;
-    border: 1px solid white;
+#footer div {
+  place-self: center center;
+  display: inline-block;
 }
 
-#kontakt span
-{
-    visibility: hidden;
-    position: absolute;
-    width: auto;
-    background-color: black;
-    color: white;
-    border-radius: 6px;
-    padding: 5px;
-    font-size: 0.5rem;
-   
-}
-#kontakt a:nth-child(1):hover #github
-{   
- 
-    visibility: visible;
-
-}
-#kontakt a:nth-child(2):hover #email
-{   
-
-    visibility: visible;
-}
-#kontakt a:nth-child(3):hover #tel
-{   
-
-    visibility: visible;
+#time {
+  color: white;
+  border: 1px solid white;
 }
 
+#kontakt span {
+  visibility: hidden;
+  position: absolute;
+  width: auto;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 0.5rem;
+}
+#kontakt a:nth-child(1):hover #github {
+  visibility: visible;
+}
+#kontakt a:nth-child(2):hover #email {
+  visibility: visible;
+}
+#kontakt a:nth-child(3):hover #tel {
+  visibility: visible;
+}
