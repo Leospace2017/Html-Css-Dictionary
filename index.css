@@ -194,7 +194,6 @@ button > img:hover {
 #html,
 #css {
   display: grid;
-
   grid: auto-flow min-content/ 1fr 1fr;
   place-self: start center;
 }
@@ -222,7 +221,11 @@ button > img:hover {
 [id|="c"] h3 {
   place-self: end center;
 }
-
+table tr
+{
+  box-sizing: content-box;
+  border: 2px solid black;
+}
 table tbody {
   display: grid;
 }
