@@ -207,6 +207,8 @@ button > img:hover {
   display: grid;
   gap: 15px;
   place-self: start center;
+
+
 }
 
 [id|="c"] {
@@ -223,11 +225,13 @@ button > img:hover {
 }
 table tr
 {
-  box-sizing: content-box;
-  border: 2px solid black;
+  box-sizing: border-box;
+  border: 1px dotted black;
+
 }
 table tbody {
   display: grid;
+
 }
 tr:nth-child(odd) {
   font-size: 1.5rem;
