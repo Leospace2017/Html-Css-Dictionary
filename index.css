@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  transition: 0.4s;
   --pink: #ea047e;
   --orange: #ff6d28;
   --gelb: #fce700;
@@ -66,8 +67,7 @@ span {
 #netz {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fill, minmax(50px, max-content));
-  grid-auto-flow: row;
+  grid-template-rows: repeat(auto-fit, minmax(50px, max-content));
   gap: 2px;
   background-image: url(image/bg3.jpg);
   background-attachment: fixed;
@@ -79,7 +79,7 @@ span {
 #header {
   display: grid;
   height: min-content;
-  place-self: center center;
+  place-self: center;
   margin-top: 5%;
 }
 #header div {
