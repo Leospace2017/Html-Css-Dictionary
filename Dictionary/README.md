@@ -1,13 +1,8 @@
-# Html-Css-Dictionary
-
+# Portfolio
 
 [Dictionary Webseite] (https://leospace2017.github.io/HtmlCssDictionary/)
 ```
-Verzeichnis zum Html und CSS 
 
-Achtung: Hier werden nur grobes Übersicht zum 
-Html und Css vorgestellt. Genauere Erklärungen 
-und Übungen müsssen dennoch selbst gemacht werden.
 
 
 
