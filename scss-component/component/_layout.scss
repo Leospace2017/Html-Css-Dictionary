@@ -1,0 +1,30 @@
+@use "../variable" as *;
+@use "../function" as *;
+@include grid-body-1(#container,100vh,75vh);
+
+// #container{
+//     display: grid;
+//     grid: 75vh 75vh 20vh/none;
+// }
+
+* {
+    @include reset;
+    font-family: "Maven", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+header {
+  display: grid;
+  grid:auto 1fr /none;
+  @include max-div;
+  /* section,summary */
+
+}
+footer {
+  background-color: $forth-color;
+
+}
+
+@media (min-width:$desktop){
+    @include grid-body-1(#container,75vh,30vh);
+} 

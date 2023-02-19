@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <meta name="author" content="Yanhui Wu">
+    <link rel="icon" href="icon/code.png">
+    <title>Dictionary HTML/CSS</title>
+</head>
+<body>
+    <div id="netz">
+        <div id="header">
+            <div>
+                <img src="image/me2.png" alt="maker">
+                <span>Ich bin Yanhui Wu, ein </span> 
+                <h1>Programmier.</h1>
+            </div>
+
+            <span>Ein kleines Nachschlagwörterbuch für mich selbst.</span>
+        </div>
+
+        <div id="nav">
+                <a href="#header" ><img src="icon/home.png" alt="" class="navi"></a>
+                <div class="dropdownH">
+                    <button><img src="icon/html.png" alt="" class="navh"></button>
+                    <div class="dropdownh">                    
+                        <a href="#h-basis">Basis</a>
+                        <a href="#h-quell">Quell</a>
+                        <a href="#h-form">Formular</a>
+                        <a href="#h-text">Text</a>
+                        <a href="#h-media">Audio/Video</a>
+                        <a href="#h-struktur">Struktur</a>
+                        <a href="#h-bild">Bild</a>
+                        <a href="#h-tabelle">Tabelle</a>
+                        <a href="#h-bindung">Bindungs</a>
+                    </div>
+                </div>
+                    
+                <div class="dropdownC">
+                    <button ><img src="icon/css.png" alt="" class="navc" ></button>
+                    <div class="dropdownc">
+                        <a href="#c-selektor">Selektoren</a>
+                        <a href="#c-text">Textdekoration</a>
+                        <a href="#c-box">Boxtheorie</a>
+                        <a href="#c-hintergrund">Hintergrund</a>
+                        <a href="#c-2d3d">2D 3D</a>
+                        <a href="#c-animation">Animation</a>
+                        <a href="#c-einreihe">Einreihetheorie</a>
+                        <a href="#c-responsive">Responsive</a>
+                        <a href="#c-variabel">Variable</a>
+                        <a href="#c-farbe">Farbe/Bild</a>
+                    </div>
+                </div>
+                <a href="#footer"><img src="icon/kontakt.png" alt="" class="navi"></a>
+            
+        </div>
+        <div id="main">
+            <div id="html">
+                <h2>HTML</h2>              
+                <div id="h-basis">
+                    <h3>Basiselemente</h3>
+                    <table>
+                        <tr><th>html kopf</th></tr>                           
+                        <tr>
+                            <td><code>head</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Beziehungen und Kompatibilität festlegen</i></td>
+                        </tr>
+                        <tr><th>html einstellungen</th></tr>                           
+                        <tr>
+                            <td><code>meta</code></td>
+                            <td><samp>< title,name,content,rel,charset,lang,http-equiv, etc. ></samp></td>
+                            <td><i>Kompatibilität, Urheber, Informationen etc.</i></td>
+                        </tr>
+                        <tr><th>base</th></tr>                            
+                        <tr>
+                            <td><code>base</code></td>
+                            <td><samp>< href=""></samp></td>
+                            <td><i>Bestimmt Links wie die geöffnet werden</i></td>
+                        </tr>
+                        <tr><th>körper</th></tr>                        
+                        <tr>
+                            <td><code>body</code></td>
+                            <td><samp><  > < /></samp></td>
+                            <td><i>Hier kommen die Code Inhalte</i></td>
+                        </tr>
+
+                        <th>navigation Hauptinhalt</th>
+                        <tr>
+                            <td><code>nav, main</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Tag für Navigationsleiste und Hauptinhalt </i></td>
+                        </tr>                      
+                    </table>
+                </div>
+                <div id="h-quell">
+                    <h3>Quellelemente</h3>
+                    <table>
+                        <th>css</th>
+                        <tr>
+                            <td><code>style</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Css Eingabestelle</i></td>
+                        </tr>
+                        <th>javascript</th>
+                        <tr>
+                            <td><code>script</code></td>
+                            <td><samp>< src=""> < /></samp></td>
+                            <td><i>Javascript Verlinkung oder Eingabestelle</i></td>
+                        </tr>
+                        <th>noscript</th>
+                        <tr>
+                            <td><code>noscript</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Verhindert Inhalte wie JavaScript, Flash oder iFrames auf Websites</i></td> 
+                        </tr>
+
+                    </table>
+                </div>
+                
+                <div id="h-form">
+                    <h3>Formulularelemente</h3>
+                    <table>
+                        <th>formular</th>
+                        <tr>
+                            <td><code>form</code></td>
+                            <td><samp>< action="url" methode="get/post"> </ > </samp></td>
+                            <td><i>Tag für einen Formular,mit vielen Form.elemente kombinierbar</i></td> 
+                        </tr>
+                        <th>eingabe</th>
+                        <tr>
+                            <td><code>input</code></td>
+                            <td><samp>< type="" id,name,value,> </ ></samp></td>
+                            <td><i>Type stehen für verschiedenen Eingabevariaten:zb.</i></td>
+                        </tr>
+                        <th>etikett</th>
+                        <tr>
+                            <td><code>label</code></td>
+                            <td><samp>< for="id"> < /></samp></td>
+                            <td><i>Komb.mit Input etc.</i></td>
+                        </tr>
+                        <th>textarena</th>
+                        <tr>
+                            <td><code>textarea</code></td>
+                            <td><samp>< name,id,cols,rows,etc.> < /></samp></td>
+                            <td><i>Texteingabestelle für mehreren Zeile</i></td>
+                        </tr>
+                        <th>formular Feldstelle</th>
+                        <tr>
+                            <td><code>fieldset > legend</code></td>
+                            <td><samp>< disabled> < /></samp></td>
+                            <td><i>Disabled=deaktivieren</i></td>
+                        </tr>
+                        <th>optionen</th>
+                        <tr>
+                            <td><code>select > optgroup > option</code></td>
+                            <td><samp>< name,id> < />< label=""> < />< value=""> < /></samp></td>
+                            <td><i>Optionsfelder</i></td>
+                        </tr>
+                        <th>inputauswahlliste</th>
+                        <tr>
+                            <td><code>datalist > option</code></td>
+                            <td><samp>< id=""> < />< value=""> < /></samp></td>
+                            <td><i>Für input list Attribut</i></td>
+                        </tr>
+                        <th>knopf</th>
+                        <tr>
+                            <td><code>button</code></td>
+                            <td><samp>< submit,reset,disabled> < /></samp></td>
+                            <td><i></i></td>
+                        </tr>                        
+                        <th>inputtypes</th>
+                        <tr>
+                            <td><code>button checkbox color date datetime-local email file hidden image month number password radio range reset search submit tel text time url week</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>input Attritbute</th>
+                        <tr>
+                            <td><code>value readonly disabled size maxlength min max multiple pattern placeholder required step autofocus height width list autocomplete</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>form Attribute</th>
+                        <tr>
+                            <td><code>action methode autocomplete novalidate accept-charset rel target name</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>input-form Attribute</th>
+                        <tr>
+                            <td><code>formaction formenctype formmethod formtarget formnovalidate novalidate</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="h-text">
+                    <h3>Textelemente</h3>
+                    <table>
+                        <th>paragraf, Code, Maschinecode,Zitiert</th>
+                        <tr>
+                            <td><code>p,code,samp,kbd,cite</code></td>
+                            <td><samp>< cite="url"> < /></samp></td>
+                            <td><i>Es werden hier nur jedes etwas anders geschrieben</i></td>
+                        </tr>
+                        <th>überschrift</th>
+                        <tr>
+                            <td><code>h1</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>überschrift bis maximale h6</i></td>
+                        </tr>
+                        <th>fett, Stark, Unterstrichen, Andeuten</th>
+                        <tr>
+                            <td><code>b, strong, u, em</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>adresse Italic Anführungszeichen</th>
+                        <tr>
+                            <td><code>adr, i, q,</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Kontakt, Italic style, <q>Anführungszeichen</q> </i></td>
+                        </tr>
+                        <th>rückwärts</th>
+                        <tr>
+                            <td><code>bdo</code></td>
+                            <td><samp>< dir=""> < /></samp></td>
+                            <td><i><bdo dir="rtl">Rückwärts rtl</bdo></i></td>
+                        </tr>
+                        <th>unterstrichen, Kleingeschrieben , Vorformatiert</th>
+                        <tr>
+                            <td><code>u, small, pre</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i><u>Unterstrichen</u>,<small>Klein</small><pre>Vor formatierter Text</pre></i></td>
+                        </tr>
+                        <th>unten,oben,durchgestrichen</th>
+                        <tr>
+                            <td><code>sub, sup, del</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i><sub>Unten</sub>|<sup>Oben</sup>|<del>durchgestrichen</del></i></td>
+                        </tr>
+                            
+                        <th>definition, Var, Verstekt</th>
+                        <tr>
+                            <td><code>dfn, var, tem</code></td> 
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Tag für Definition, Variable und Template Verstekt wenn die Seite lädts</i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="h-media">
+                    <h3>Medien</h3>
+                    <table>
+                        <th>video</th>
+                        <tr>
+                            <td><code>video</code></td>
+                            <td><samp>< src="" controls autoplay muted> < /></samp></td>
+                            <td><i>Video einbinden mit JS einstellbar</i></td>
+                        </tr>
+                        <tr><th>quelle</tr></th>
+                        <tr>
+                            <td><code>source</code></td>
+                            <td><samp>< ></samp></td>
+                            <td><i>Gleich src, kombinierbar</i></td>
+                        </tr>
+                        <tr><th>audio</tr></th>
+                        <tr>
+                            <td><code>audio</code></td>
+                            <td><samp>< src="" controls autoplay muted> < /></samp></td>
+                            <td><i>Audio einbinden</i></td>
+                        </tr>
+                        <th>Objekt</th>
+                        <tr>
+                            <td><code>object</code></td>
+                            <td><samp>< data="" type=""> < /></samp></td>
+                            <td><i>Externe Medien verbinden und mit param-Element einstellen</i></td>
+                        </tr>
+                        <th>einbetten</th>
+                        <tr>
+                            <td><code>embed</code></td>
+                            <td><samp><  src="" type=""></samp></td>
+                            <td><i>Wird als Container für die externen Anwendungen, den multimedialen und interaktiven Inhalt, die der Browser nicht versteht, verwendet</i></td>
+                        </tr>                     
+                    </table>
+                </div>
+                <div id="h-struktur">
+                    <h3>Struktur</h3>
+                    <table>
+                        <th>Inline-style</th>
+                        <tr>
+                            <td><code>style</code></td>
+                            <td><samp>< > </samp></td>
+                            <td><i>Inline einen CSS einführen</i></td>
+                        </tr>
+                        <th>Box</th>
+                        <tr>
+                            <td><code>div</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Beliebtes und flexibles Blockelement</i></td>
+                        </tr>
+                        <th>Textblock</th>
+                        <tr>
+                            <td><code>span</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Beleibstes Inline-Blockelement</i></td>
+                        </tr>
+                        <th>Artikelbereich, Nebenbereich</th>
+                        <tr>
+                            <td><code>article, aside, sumary</code></td>
+                             <td><samp>< > < /></samp></td>
+                            <td><i>Tag für Artikel, Nebeninhalte und Kennzeichen</i></td>
+                        </tr>
+                        <th>Kopf Haupt Fußbereich</th>
+                        <tr>
+                            <td><code>header, main, footer</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Tag für die 3 Hauptbereiche</i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="h-bild">
+                    <h3>Bild</h3>
+                    <table>
+                        <th>Bild</th>
+                        <tr>
+                            <td><code>img</code></td>
+                            <td><samp>< src, alt,etc,></samp></td>
+                            <td><i>Einen url einfügen und verbinden</i></td>
+                        </tr>
+                        <th>img Attribute</th>
+                        <tr>
+                            <td><code>alt crossorigin ehight ismap loading longdesc referrerpolicy sizes src srcset usemap width</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>Karte in der Karte</th>
+                        <tr>
+                            <td><code>map > area</code></td>
+                            <td><samp>< > < />   < ></samp></td>
+                            <td><i>Koordinaten im area definieren und weiterleitbar</i></td>
+                        </tr>
+                        <th>Area Attribute</th>
+                        <tr>
+                            <td><code>alt coords href hreflang media referrerpolicy rel shape target type</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>canvas</th>
+                        <tr>
+                            <td><code>canvas</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Zeichne mit Javascript Bilder</i></td> 
+                        </tr>               
+                        <th>Bild etikieren</th>
+                        <tr>
+                            <td><code>figure > figcaaption</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Tags für Bildetikieren</i></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div id="h-tabelle">
+                    <h3>Tabelle und Liste</h3>
+                    <table>
+                        <th>Geordnete Liste und Ungeordnete Liste</th>
+                        <tr>
+                            <td><code>ol > li, ul > li</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Row liste erstellen mit Nummerierungen oder nur mit Punkten</i></td>
+                        </tr>
+                        <th>Tabelle(Nur in Reihe möglich)</th>
+                        <tr>
+                            <td><code>table > caption (thead, tbody, tfood) > tr>th, tr>td</code></td>
+                            <td><samp>< > < /></samp></td>
+                            <td><i>Tabelle Überschrift Tabelleabteilungen Tabellereihe und TabellereiheInhalte</i></td>
+                        </tr>
+                        <th>th Attribute</th>
+                        <tr>
+                            <td><code>abbr, colspan, rowspan, headers(id), scope</code></td>
+                            <td><samp>< abbr, etc,=""> < /></samp></td>
+                            <td><i>Abkürzung, Columnausweiterung, Rowausweiterung, Beziehung zu ID, Überschrift(Umfang)</i></td>
+                        </tr>
+                        <th>td Attribute</th>
+                        <tr>
+                            <td><code>colspan rowspan headers(id)</code></td>
+                            <td><samp>< colspan, etc,=""> < /></samp></td>
+                            <td><i>Columnausweiterung, Rowausweiterung, Beziehung zu ID</i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="h-bindung">
+                    <h3>Bindungselemente</h3>
+                    <table>
+                        <th>weiterleiten</th>
+                        <tr>
+                            <td><code>a</code></td>
+                            <td><samp>< ></samp></td>
+                            <td><i>Einen Link einfügen und weiterleiten</i></td>
+                        </tr>
+                        <th>verbinden</th>
+                        <tr>
+                            <td><code>link</code></td>
+                            <td><samp>< > </ ></samp></td>
+                            <td><i>Ressourcen verbinden </i></td> 
+                        </tr>
+                        <th>iframe</th>
+                        <tr>
+                            <td><code>iframe</code></td>
+                            <td><samp>< src="" frameborder="0"> < /></samp></td>
+                            <td><i>Inhalts aus zß. Youtube einbinden. control loop mute auoplay</i></td>
+                        </tr>
+                    </table>
+                </div>      
+            </div>
+    
+            <div id="css">
+                <h2>CSS</h2>             
+                <div id="c-selektor">                   
+                    <h3>Selektoren</h3>
+                    <table>
+                        <th>Direkter Tagname, Klassen, ID</th>
+                        <tr>
+                            <td><code>p, .klassename , #idname</code></td>
+                            <td><samp>p{} .klasse{} #id{}</samp></td>
+                            <td><i>p Tag, Klasse mit der Name Klasse, ID mit der Name id</i></td>
+                        </tr>
+                        <th>Direktes Kind, Alle Kinder, Nächstes Nachbarelement/Tag</th>
+                        <tr>
+                            <td><code>> ,   leertaste   , +</code></td>
+                            <td><samp> div > p{}, div p{}, div + p{},</samp></td>
+                            <td><i>p Kind vom div, alle p vom div, p Nächster Nachbar vom div</i></td>
+                        </tr>
+                        <th>Alle Nachbar, Alle Elemente, Alle Elemente nach</th>
+                        <tr>
+                            <td><code> - , * , ~</code></td>
+                            <td><samp>div - p, *{} , div ~ p</samp></td>
+                            <td><i>Alle Nachbar p von div, Alle Elemente in Html, Alle nach div befindeten p </i></td>
+                        </tr>
+                        <th>Attribute, Attribute mit , Attribute (Ganzes) mit</th>
+                        <tr>
+                            <td><code>Tagname[attribute], [attribute=value], [attribute ~=value, |=value ]</code></td>
+                            <td><samp>[href],[target=_blank,[titile~=html][titile|=html]</samp></td>
+                            <td><i>Alle Attribute mit href auswählen, Alle target mit _blank auswählen, Alle title mit dem Wort html auswählen, Alle title mit dem Wort html- am anfang auswählen oder ganzes Wort.</i></td>
+                        </tr>
+                        <th>Attribute mit Teilswörter Anfangs, Ende, Enthalten</th>
+                        <tr>
+                            <td><code>[attribute ^= , $=, *=]</code></td>
+                            <td><samp>[href ^= "https"][href $= ".pdf"][href *= html]</samp></td>
+                            <td><i>Alle href mit Anfangswörter https auswählen, Alle href mit Endwörter .pdf auswählenm, Alle href mit html wörter auswählen</i></td>
+                        </tr>
+                        <th>Bestimmtes Kind, Nicht auswählen, Ungerade/GeradeZahlen </th>
+                        <tr>
+                            <td><code>:nth-child(nummer),not(selektor), odd/even :nth-child((-/zahlen)n+nummer)</code></td>
+                            <td><samp>p:nth-child(1),not(nth-child(1)),p:nth-child(odd,even),p:nth-child(n+nummer)</samp></td>
+                            <td><i>Der erstes Kind p auswählen, Dem ersten Kind p nicht auswählen, Ungerade oder Gerade p auswählen, n+zeile steht für ab welche zeile man selektiert (-n+zeile steht für bis welche zeile/davor kann auch nummer stehen steht für ab jede zeile)</i></td>
+                        </tr>
+                            
+                        <th>Erstes Kind, Letztes Kind, Erstes Type und letztes Type</th>
+                        <tr>
+                            <td><code>:first-child, :last-child, :first-of-type, :last-of-type</code></td>
+                            <td><samp>p:first-child, p:first-of-type </samp></td>
+                            <td><i>Erstes p Kind auswählen, Der erste Type von p auswählen</i></td>
+                        </tr>
+                        <th>Zustände:Maus über und Klickhaltung(aktiviert) nach Klick(focusiert) </th>
+                        <tr>
+                            <td><code>:hover, :active, :focus</code></td>
+                            <td><samp>a:hover, a:active, input[type=text]:focus</samp></td>
+                            <td><i>Selber ausprobieren</i></td>
+                        </tr>
+                        <th>Zustände: Besucht(), Zielrichtungvorgang, rootvorgang(=Html) </th>
+                        <tr>
+                            <td><code>:visited, :target :root</code></td>
+                            <td><samp>a:visisted,  , :root{}=html{} </samp></td>
+                            <td><i>Schon besuchte Seite(nach klicks),(Nach Klicks(resetbar))Aufs Ziel gewirkt, Ladevorgang</i></td>
+                        </tr>
+                        <th>Zustände: Normal Laufend, Geblockt, Gültig, Ungültig</th>
+                        <tr>
+                            <td><code>:enabled, :disabled, :valid :invalid</code></td>
+                            <td><samp></samp></td>
+                            <td><i> Gülige und Ungültige sind nur bei Forms anwendbar und limitiert bei Email, Zahlen und min max Attribute</i></td>
+                        </tr>
+                        <th>Zustände: Auswählbar, Erforderlich, Innerhalb Interwall, Außerhalb interwall</th>
+                        <tr>
+                            <td><code>:optional, :required, :in-range, :out-of-range</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>Zustände: Schreibgeschützt, Les und Schreibbar, :Standart</th>
+                        <tr>
+                            <td><code>:read-only, :read-write, :default</code></td>
+                            <td><samp></samp></td>
+                            <td><i>read-write sind Zustände ohne read-only und disabled</i></td>
+                        </tr>
+                        <th>Stelle finden erzeugen ändern</th>
+                        <tr>
+                            <td><code>::after, ::before, ::marker</code></td>
+                            <td><samp>p::after{content:"end"},p::before{content:"hi"}, ::marker{color:red}  </samp></td>
+                            <td><i>Jedes P Texte am Ende end hinzufügen,Jedes p Texte am Anfang hi hinzufügen, Alle Default Etiketten rot färben</i></td>
+                        </tr>
+                        <th>Stelle finden erzeugen ändern</th>
+                        <tr>
+                            <td><code>::placeholder, ::section</code></td>
+                            <td><samp>::placeholder{color:red}, ::selection{color:red} </samp></td>
+                            <td><i>Alle placeholder die Texte rot färben, Alle Makierungen mit der Maus die Texte Rot färben</i></td>
+                        </tr>
+                        <th>Stelle finden erzeugen ändern</th>
+                        <tr>
+                            <td><code>::first-letter, ::first-line </code></td>
+                            <td><samp>p::first-letter{}, p::first-line{}</samp></td>
+                            <td><i>Erste Buchstabe in p wählen,  Erste Zeile in p wählen</i></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div id="c-text">
+                    <h3>Textdekoration</h3>
+                    <table>
+                        <th>Text x-Achsel</th>
+                        <tr>
+                            <td><code>text-align, text-align-last</code></td>
+                            <td><samp>text-align:right,left,center,justify,start,end</samp></td>
+                            <td><i>Wie die Namen schon sagen, stehen die für verschiedenen Stelle und Stellungsmöglichkeiten. Last für letze Reihe.</i></td>
+                        </tr>
+                        <th>Text y-Achsel einer Zeile(Contentbereich)(=sub sup)</th>
+                        <tr>
+                            <td><code>vertical-align</code></td>
+                            <td><samp>:baseline, text-top, text-bottom, sub, super</samp></td>
+                            <td><i>Baseline ist Default</i></td>
+                        </tr>
+                        <th>Schreibrichtung</th>
+                        <tr>
+                            <td><code>direction:rtl/ltl + unicode-bidi:bidi-override,writing-mode</code></td>
+                            <td><samp>writing-mode:horizontal-tb,vertical-rl,vertical-</samp></td>
+                            <td><i>Nur mit direction kombinierbar,vertikal</i></td>
+                        </tr>
+                        <th>Textdekoration(Zeile mit 1-2 Linie spielen)</th>
+                        <tr>
+                            <td><code>text-decoration:line color style thickness</code></td>
+                            <td><samp>bei style:double dotted dashed wavy</samp></td>
+                            <td><i>Kann getrennt mit text-decoration-line, text-decoration-color u.s.w. geschrieben werden, oder kann abgekürzt geschrieben werden siehe oben, line ist default,</i></td>
+                        </tr>
+                        <th>Textgröße</th>
+                        <tr>
+                            <td><code>text-transform</code></td>
+                            <td><samp>:uppercase, lowercase, capitalize</samp></td>
+                            <td><i>Alles Groß, Klein, erste Buchstabe jeden Wörter Groß</i></td>
+                        </tr>
+                        <th>Textleere Einstellungen</th>
+                        <tr>
+                            <td><code>text-indent, letter-spacing, line-height, word-spacing, white-space</code></td>
+                            <td><samp>bei white-space:nowrap</samp></td>
+                            <td><i>Der Anfang von der erster Zeile, Buchstabeabstand, Zeile Höhe und Tiefe, Wörterabstand, Zeilenumbruch deaktivieren hier die Zeile versteckt</i></td>
+                        </tr>
+                        <th>Textschatten</th>
+                        <tr>
+                            <td><code>text-shadow</code></td>
+                            <td><samp>: x,y,blur(unschärfe),farbe</samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>Schrifteinstellungen</th>
+                        <tr>
+                            <td><code>font-weight, font-size, font-family</code></td>
+                            <td><samp></samp></td>
+                            <td><i>Dicke, Größe, Arten</i></td>
+                        </tr>
+                        <th>Inhalts hinzufügen</th>
+                        <tr>
+                            <td><code>content</code></td>
+                            <td><samp>:"Inhalt" counter attr string url </samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>font-face</th>
+                        <tr>
+                            <td><code>@font-face</code></td>
+                            <td><samp>{font-family:;src:url{};etc.}</samp></td>
+                            <td><i>Eigenen oder gedownloadeten Fonts erstellen</i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="c-box">
+                    <h3>Boxtheorie</h3>
+                    <table>
+                        <th>Margin, Border, Padding</th>
+                        <tr>
+                            <td><code>margin, -top, -right, -bottom, -left</code></td>
+                            <td><samp>top bottom/right left, T/ L R / B,</samp></td>
+                            <td><i>Boxe haben 3 Hülle(Margin,Border,Padding)</i></td>
+                        </tr>
+                        <th>Border</th>
+                        <tr>
+                            <td><code>border-width,-style,-color</code></td>
+                            <td><samp>-style:dotted,solid.double,etc.</samp></td>
+                            <td><i>Werte vergleichbar mit Margin (Border ist der Rand, vergleichbar zu Margin und Padding können wir die sehen)</i></td>
+                        </tr>
+                        <th>Borderecke und Leere </th>
+                        <tr>
+                            <td><code>border-radius, -spacing + -collapse</code></td>
+                            <td><samp>Abkürkung radius obenlinks = top Uhrzeigerrichtung</samp></td>
+                            <td><i>Ecke runden, Abstand zu Borders einstellen funktioniert nur zusammen,</i></td>
+                        </tr>
+                        <th>Höhe Weite</th>
+                        <tr>
+                            <td><code>width, min/max-width, height, min/max-height</code></td>
+                            <td><samp></samp></td>
+                            <td><i>Höhe und Breite einstellen, max = bis zu der  Größe elastisch vergrößerbar, min ist dann andersrum</i></td>
+                        </tr>
+                        <th>Schatten und border-box </th>
+                        <tr>
+                            <td><code>box-shadow, border-sizing</code></td>
+                            <td><samp>:unten,rechts,otrans,weite,farbe,inset,none :border,content-box</samp></td>
+                            <td><i>content-box ist default, borderbox ist der tatsächlichen Größe von einen Box ohne Padding und Margin</i></td>
+                        </tr>
+                        <th>Abstand zum Elternelement, Margin dekorieren</th>
+                        <tr>
+                            <td><code>inset , outline</code></td>
+                            <td><samp>inset=top right bottom left, -width -style -color </samp></td>
+                            <td><i>von Innen dekorieren. outline nimmt im gegensatz zu Border keinen Größe weg</i></td>
+                        </tr>
+                        <th>Form</th>
+                        <tr>
+                            <td><code>appearence</code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>Form</th>
+                        <tr>
+                            <td><code>aspect-ratio</code></td>
+                            <td><samp>aspect-ratio 3/2</samp></td>
+                            <td><i>gibt die Verhältnis der Seite an. 3für Breite</i></td>
+                        </tr>                        
+                        <th>Form</th>
+                        <tr>
+                            <td><code></code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                            
+                    </table>
+                </div>
+                <div id="c-hintergrund"> 
+                    <h3>Hintergrund</h3>
+                    <table>
+                        <th>Bilder Farbe Wiederholungen</th>
+                        <tr>
+                            <td><code>background-color, -image, -repeat</code></td>
+                            <td><samp>:0,0,0,durchsichtigkeit0-1, :url(), :norepeat, repeat, repeat-x/y,space, round</samp></td>
+                            <td><i>repeat=Wie die Bilder wiederholt werden soll</i></td>
+                        </tr>
+                        <th>Position, Anheften, Größe</th>
+                        <tr>
+                            <td><code>background-positon, -attachment, -size</code></td>
+                            <td><samp>:center/right/left/top/bottom, :scroll/fixed, :auto, contain, cover</samp></td>
+                            <td><i>Hintergrundstelle setzen,Verhaltung von Hintergrundsbild scrollbar oder angeheftet,cover(ganzes bild)contain(originalgröße achte auf Rest) auto= default</i></td>
+                        </tr>
+                        <th>Kante Anpassung und Kontrast</th>
+                        <tr>
+                            <td><code>background-origin, -clip, -blend-mode</code></td>
+                            <td><samp>-origin/-clip:content-box, border-box, padding-box, :normal multiply screen overlay darken lighten color-dodge saturation color luminosity</samp></td>
+                            <td><i>Try yourself</i></td>
+                        </tr>
+                        <th>Ausschneiden</th>
+                        <tr>
+                            <td><code>clip:rect (top, right, bottom, left)/clip-path:</code></td>
+                            <td><samp>-path:circle,ecllipse,polydon,inset(etc.)</samp></td>
+                            <td><i>Das Bild laut position ausschneiden</i></td>
+                        </tr>
+                        <th>Gradient</th>
+                        <tr>
+                            <td><code>(repeating-)linear-gradient /radial /conic</code></td>
+                            <td><samp>to left/right/bottom/top, 90deg, color10%(10% 40%(von bis)) color90%</samp></td>
+                            <td><i>Bei Border Schatten background</i></td>
+                        </tr>
+                           
+                           
+                    </table>
+                </div>
+                <div id="c-2d3d">
+                    
+                    <h3>2D 3D</h3>
+                    <table>
+                        <th>2D Transform</th>
+                        <tr>
+                            <td><code>transform:translate(),transform:scale(), transform:rotate(),transform:skew()</code></td>
+                            <td><samp>(x-achsel,y-achsel)</samp></td>
+                            <td><i>Verschieben, Vergrößern, Drehen, Schief/Schräg</i></td>
+                        </tr>
+                        <th>3D Matrix</th>
+                        <tr>
+                            <td><code>transform:matrix</code></td>
+                            <td><samp>matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()</samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>3D Transform</th>
+                        <tr>
+                            <td><code>transform:translate3d(),transform:scale3d(), transform:rotate3d(),transform:skew3d()</code></td>
+                            <td><samp>(x-achsel,y-achsel,z-achsel)</samp></td>
+                            <td><i>Try Yourself</i></td>
+                        </tr>
+                        <th>Perspektive</th>
+                        <tr>
+                            <td><code>perspective,perspective-origin</code></td>
+                            <td><samp>:none px, -origin: 50% 50%;</samp></td>
+                            <td><i>Weite zum Objekt, default50% stehtfür (links rechts) center top bottom left right oder mit % </i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="c-animation">                    
+                    <h3>Animation</h3>
+                    <table>
+                        <th>Umwandeln</th>
+                        <tr>
+                            <td><code>transition-property, -duration, -timing-function, -delay</code></td>
+                            <td><samp>:width/height, s, linear ease etc., verzögerung </samp></td>
+                            <td><i>Nur breite und Höhe, Nur in Sekunde,  Eindemensional bewegen, Verzögerung in Sekunde, Kann nur mit Zustände kombiniert werden wie :hover :focus etc.</i></td>
+                        </tr>
+                        <th>Animieren1</th>
+                        <tr>
+                            <td><code>@keyframes name {values{}}</code></td>
+                            <td><samp>{10%{}50%{}100{}}</samp></td>
+                            <td><i>Name vergeben und Ablauf mit Bewegungen(2d3dvalues etc.) einstellen</i></td>
+                        </tr>
+                        <th>Animieren2</th>
+                        <tr>
+                            <td><code>animation-name(vom @keyframes):, -duration, -timing-function, -delay, -iteration-count, -direction</code></td>
+                            <td><samp>-duration(.s), -function(linear, ease, cubic-bezier(,,,)), -delay(+/-), -count(zahl/infinite), -direction(normal, reverse, alternate, alternate-reverse)</samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>Animieren3</th>
+                        <tr>
+                            <td><code>animation-play-state,-fill-mode</code></td>
+                            <td><samp>:paused/running, :forwards,backwards,both</samp></td>
+                            <td><i>Zustand, fill-mode= Wie es endet oder anfängt oder beides. Try Yourself</i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="c-einreihe">                    
+                    <h3>Einreihentheorie</h3>
+                    <table>
+                        <th>Inline-Blockelement und versteckt</th>
+                        <tr>
+                            <td><code>display:inline,block, inline-block,none</code></td>
+                            <td><samp></samp></td>
+                            <td><i>In einer Zeile, 1Block =1Zeile, 1Zeile =Mehrere Blöcke, versteckt</i></td>
+                        </tr>
+                        <th>Einreihemöglichkeiten</th>
+                        <tr>
+                            <td><code>display:flex,grid,list-item,contents,table-cell</code></td>
+                            <td><samp>1Dimensional,2Dimensional,Liste(li),Elternelement verschwunden, td</samp></td>
+                            <td><i>Nicht Alles, aber die Wichtigsten</i></td>
+                        </tr>
+                        <th>Einreihestufe</th>
+                        <tr>
+                            <td><code>display:static,relative,sticky,absolute,fixed</code></td>
+                            <td><samp></samp></td>
+                            <td><i>static:standart relative:relativ zum standart sticky:relativ~fixed absolute:relativ zum vorfahren fixed: anheften zum viewport</i></td>
+                        </tr>
+                        <th>Schweben Leeren Verstecken</th>
+                        <tr>
+                            <td><code>float, clear, visibility:hidden</code></td>
+                            <td><samp></samp></td>
+                            <td><i>Zu der angegebenen Stelle schweben und einrücken, Verhindert Overflow auf der beiden Seiten, Versteckt aber der Platz verschwindet nicht </i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="c-responsive">                    
+                    <h3>Responsive</h3>
+                    <table>
+                        <th>Überfliessen, Größe begrenzen</th>
+                        <tr>
+                            <td><code>overflow,resize</code></td>
+                            <td><samp>:hidden, scroll :vertical, horizontal, both</samp></td>
+                            <td><i>Bestimme das Inhalt das über die Fläche hinaus geht, die Variierebare Größeelemente eingrenzen wie zb: textarea </i></td>
+                        </tr>
+                        <th>Css Variable</th>
+                        <tr>
+                            <td><code>--name:farbe; > var(--name)</code></td>
+                            <td><samp></samp></td>
+                            <td><i>Im root/html Bereich einen/mehreren Farbvariable vordeklarieren dannach im gewünschte Bereich eingeben </i></td>
+                        </tr>
+                        <th>Inhalt bei betimmt. Bildschirmanzeige ändern</th>
+                        <tr>
+                            <td><code>@media only screen and(){}</code></td>
+                            <td><samp>(max-width:700px){.klasse{ width wtc.}}</samp></td>
+                            <td><i>0-700px diese Änderungen durchführen, und anderum ist dann mit min-width:700px </i></td>
+                        </tr>
+                        <th>Columntheorie</th>
+                        <tr>
+                            <td><code>klasse vergeben</code></td>
+                            <td><samp>.col-1 {width: 8.33%;} .col-2 {width: 16.66%;} .col-3 {width: 25%;} .col-4 {width: 33.33%;} .col-5 {width: 41.66%;} .col-6 {width: 50%;} .col-7 {width: 58.33%;} .col-8 {width: 66.66%;} .col-9 {width: 75%;} .col-10 {width: 83.33%;} .col-11 {width: 91.66%;} .col-12 {width: 100%;}</samp></td>
+                            <td><i>Jeden Bereich einen einkalkurietes Breite setzen</i></td>
+                        </tr>
+                        <th>Flex-box1</th>
+                        <tr>
+                            <td><code>display:flex; flex-direction, flex-wrap, flex-flow(direction+wrap)</code></td>
+                            <td><samp>:column,row/reverse :wrap, nowrap reverse</samp></td>
+                            <td><i>Richtungseinstellungen, Reiheeinstellungen</i></td>
+                        </tr>
+                        <th>Flex-box2</th>
+                        <tr>
+                            <td><code>justiy-content, align-content, align-items</code></td>
+                            <td><samp>center, flex-start, flex-end, space-between, space-around, spacen-evenly, stretch, baseline etc, </samp></td>
+                            <td><i>Ganzes Inhalt(x-achsel) einstellen, GanzesInhalt(y-achsel)einstellen, Ganzes Inhalt im eigenen Blockfläche einstellen</i></td>
+                        </tr>
+                        <th>Flex-box3</th>
+                        <tr>
+                            <td><code>flex(flex-grow, -shrink, -basis)</code></td>
+                            <td><samp>:number(0-10fr):number(0-10fr):value </samp></td>
+                            <td><i>Der Box auf x-Achsel vergrößern </i></td>
+                        </tr>
+                        <th>Flex-box4</th>
+                        <tr>
+                            <td><code>order, align-self</code></td>
+                            <td><samp>:number :flex-end -start center </samp></td>
+                            <td><i>Auf die Anzahl der Boxes auf x-Achsel einreihen, Platzierung aud y-Achsel</i></td>
+                        </tr>
+                        <th>Grid1</th>
+                        <tr>
+                            <td><code>display:grid; display:inline-grid;grid:</code></td>
+                            <td><samp>grid= grid-auto-flows  +  grid-auto-rows/columns  +  (grid-template) = grid-template-rows + grid-template-columns</samp></td>
+                            <td><i>(Erstelle den ganzen Netz dar)Hier erstelle ich nur einen grobe Übersicht, genauere Erklärungen bitte bei Learning by Doing.Its too much too explain, Tabelle reichen leider nicht aus</i></td>
+                        </tr>
+                        <th>Grid2</th>
+                        <tr>
+                            <td><code>grid-area, grid-template-area:"name name"/ "name""name"</code></td>
+                            <td><samp>grid-area = grid-columnn(= -start + -end) + grid-row (= -start + -end)  grid-area:name</samp></td>
+                            <td><i>grid-area ist für die Einstellungen der Boxe auf Feldnetze : row start / column start/ row end / column end </i></td>
+                        </tr>
+                            
+                        <th>Grid3</th>
+                        <tr>
+                            <td><code>place-content, place-items, place-self</code></td>
+                            <td><samp>place-content=align-content + justify-content, place-items=align-items + justify-content, place-self=align-self + justify-self </samp></td>
+                            <td><i>Benutzt für :Ganzes Feld, Jedes Items, Einzelnen Item</i></td>
+                        </tr>                           
+                        <th>Grid4</th>
+                        <tr>
+                            <td><code>grid-auto-rows/-colums, grid-auto-flow</code></td>
+                            <td><samp>:value, :dense column rows</samp></td>
+                            <td><i>Automatischen Felderweiterung fals im Feld zu viel Inhalt ist, Reiheeinstellungen:dicht horizontal vertikal</i></td>
+                        </tr>                          
+                        <th>Grid5</th>
+                        <tr>
+                            <td><code>repeat(),minmax(),fr, </code></td>
+                            <td><samp>repeat(anzahl,größe), minmax(minimal,maximal, fr=auto(nimmt größte fläche ein mit zahl variierbar) )</samp></td>
+                            <td><i>Wiederholungen, Minimale und Maximale größe einstellen, fr ist nur bei grid nutzbar</i></td>
+                        </tr>                           
+                    </table>
+                </div>
+                <div id="c-variabel">                     
+                    <h3>Variabel</h3>
+                    <table>
+                        <th>Pixel</th>
+                        <tr>
+                            <td><code>px</code></td>
+                            <td><samp>Relativ zur Größe des Anzeigegerätes</samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>em, rem</th>
+                        <tr>
+                            <td><code>em, relativ zum Elternfontgröße 2em 2xsoGroß</code></td>
+                            <td><samp>rem, relativ zum Rootfontgröße </samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>vh,vw</th>
+                        <tr>
+                            <td><code>vh, relativ zum Ansichtshöhe in %</code></td>
+                            <td><samp>vw, relativ zum Ansichtsweite in %</samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>vmin, vinmax</th>
+                        <tr>
+                            <td><code>vmin, elatisch bis zum eingestellte Größe</code></td>
+                            <td><samp>vmax, ab eingestellte Größe bis unendllich vergrößerbar</samp></td>
+                            <td><i></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="c-farbe">                   
+                    <h3>Farbe/Bild</h3>
+                    <table>
+                        <th>Farbe</th>
+                        <tr>
+                            <td><code><p>rgba(0-255,0-255,0-255, transparent(opacity))</p><p>R  G  B</p><p>#FF FF FF</p></code></td>
+                            <td><samp>#FFFFFF je 2Symbole drückt einen Farbwert von 0-255 aus</samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>Image</th>
+                        <tr>
+                            <td><code>img{}</code></td>
+                            <td><samp>object-fit: fill, cover, contain, none, scale-down objekt-position: right let top center oder x, y mit value </samp></td>
+                            <td><i>vollfüllen(resize),vollfüllen, vollfüllen(nicht angepasst), nichts, verkleinern</i></td>
+                        </tr>
+                        <th></th>
+                        <tr>
+                            <td><code></code></td>
+                            <td><samp></samp></td>
+                            <td><i></i></td>
+                        </tr>
+                        <th>Image mit Schriften einmasken</th>
+                        <tr>
+                            <td><code>mask-image, -mode, -origin, -positon, -repeat, -size</code></td>
+                            <td><samp>mask-image:url()mit anderen image einmasken</samp></td>
+                            <td><i>Vergleichbar mit background-image Werte</i></td>
+                        </tr>                          
+                    </table>
+                </div>        
+            </div>
+        </div>
+        <div id="footer">
+            <h2>Kontakt</h2>
+            <span>Deutschland, 51469, BergischGladbach</span>
+            <div id="time"></div>
+            <div id="kontakt"> 
+                <a href="https://github.com/Leospace2017" target="_blank"><img src="../Icon/icons8-github-64.png" alt="Github" ><span id="github">https://github.com/Leospace2017 (oder anklicken)</span></a>               
+                <a href="mailto:erhalt5555@gmail.com" target="_blank"><img src="../Icon/icons8-nachricht-64.png" alt="Nachricht" ><span id="email">erhalt5555@gmail.com (oder anklicken)</span></a>
+                <a href="tel:004915730308769" target="_blank"><img src="../Icon/icons8-telefon-64.png" alt="Telefon"><span id="tel">004915730308769 (oder anklicken)</span></a>
+            </div>
+            <span>by Yanhui Wu <a href="/README.md">&copy; </a></span>
+        </div>
+
+    </div>
+    <script>
+      setInterval(function() {
+        let currentTime = new Date();
+        let hours = currentTime.getHours();
+        let minutes = currentTime.getMinutes();
+        let seconds = currentTime.getSeconds();
+        document.getElementById('time').innerHTML = hours + ':' + minutes + ':' + seconds;
+      }, 1000);
+    </script>
+</body>
+</html>
