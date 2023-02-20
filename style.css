@@ -40,14 +40,14 @@ header {
 }
 
 footer {
-  background-color: rgb(163, 94, 94);
+  background: linear-gradient(0.5turn, rgb(163, 94, 94), red);
 }
 
 @media (min-width: 1025px) {
   #container {
     display: grid;
     width: 100%;
-    grid: auto-flow 75vh 75vh 30vh/none;
+    grid: auto-flow 100vh 100vh 30vh/none;
   }
 }
 .skill-intro {
@@ -105,7 +105,7 @@ footer {
 }
 /* skills */
 .skills-set {
-  background-color: #1E656D;
+  background: linear-gradient(to bottom, #F1F3CE, #1E656D);
   position: relative;
   height: 100%;
   width: 100%;
@@ -136,7 +136,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-html:hover::after {
   content: "\f005\f005\f005\f005\f5c0";
@@ -159,7 +159,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-css:hover::after {
   content: "\f005\f005\f005\f005\f5c0";
@@ -181,7 +181,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-sass:hover::after {
   content: "\f005\f005\f005\f5c0";
@@ -203,7 +203,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-bootstrap:hover::after {
   content: "\f005\f005\f005";
@@ -225,7 +225,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-javascript:hover::after {
   content: "\f005\f005\f5c0";
@@ -247,7 +247,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-react:hover::after {
   content: "\f005\f5c0";
@@ -269,7 +269,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-node:hover::after {
   content: "\f005";
@@ -291,7 +291,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-npm:hover::after {
   content: " \f005";
@@ -313,7 +313,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-firebase:hover::after {
   content: "\f5c0";
@@ -335,7 +335,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-mongoDB:hover::after {
   content: "\f5c0";
@@ -357,7 +357,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: #1E656D;
+  background-color: transparent;
 }
 .skills-set .skill-terminal:hover::after {
   content: "\f005\f005";
@@ -371,7 +371,7 @@ footer {
 
 @media (min-width: 1025px) {
   .skills-set {
-    grid: repeat(5, 1fr)/repeat(3, 1fr);
+    grid: repeat(4, 1fr)/repeat(3, 1fr);
     place-items: start center;
     font-size: clamp(1.5rem, 2.8vw, 2.3rem);
   }
@@ -388,14 +388,13 @@ footer {
     height: 50px;
     width: 50px;
     margin-right: 10px;
-    background-color: #1E656D;
   }
 }
 #navi {
   height: 100px;
   width: 100px;
   position: fixed;
-  inset: 1rem 1rem auto auto;
+  inset: 0.2rem 1rem auto auto;
   z-index: 10;
 }
 #navi .navi-container {
@@ -520,10 +519,10 @@ main {
   height: 100%;
   width: 100%;
   color: white;
-  background-color: #00293C;
   display: grid;
   grid-template: repeat(6, 1fr)/none;
   justify-content: center;
+  background: linear-gradient(0.5turn, #00293C, blue);
 }
 main .projekt-cube {
   display: grid;
@@ -634,7 +633,7 @@ main .projekt-cube .box-container .box6 {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: rgb(163, 94, 94);
+  background-color: transparent;
 }
 .kontakt-impressum div .kontakt-email::before {
   padding: 0.5em;
@@ -648,7 +647,7 @@ main .projekt-cube .box-container .box6 {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: rgb(163, 94, 94);
+  background-color: transparent;
 }
 .kontakt-impressum div .kontakt-adresse {
   display: flex;
@@ -665,7 +664,7 @@ main .projekt-cube .box-container .box6 {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: rgb(163, 94, 94);
+  background-color: transparent;
 }
 .kontakt-impressum div .kontakt-github::before {
   padding: 0.5em;
@@ -679,7 +678,7 @@ main .projekt-cube .box-container .box6 {
   background-position: center;
   background-repeat: no-repeat;
   background-color: tomato;
-  background-color: rgb(163, 94, 94);
+  background-color: transparent;
 }
 
 @media (min-width: 1025px) {
