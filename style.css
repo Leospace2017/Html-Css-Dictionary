@@ -128,7 +128,7 @@ footer {
   height: 25px;
   display: inline-block;
   margin: 0 10px 0 0;
-  background-image: url(/../../Icon/icons8-html-5-64.png);
+  background-image: url(../../Icon/icons8-html-5-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -151,7 +151,7 @@ footer {
   height: 25px;
   display: inline-block;
   margin: 0 10px 0 0;
-  background-image: url(/../../Icon/icons8-css3-64.png);
+  background-image: url(/../Icon/icons8-css3-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,7 +173,7 @@ footer {
   height: 25px;
   display: inline-block;
   margin: 0 10px 0 0;
-  background-image: url(/../../Icon/icons8-sass-64.png);
+  background-image: url(../Icon/icons8-sass-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ footer {
   height: 25px;
   display: inline-block;
   margin: 0 10px 0 0;
-  background-image: url(/../../Icon/icons8-bootstrap-64.png);
+  background-image: url(/Icon/icons8-bootstrap-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -217,7 +217,7 @@ footer {
   height: 25px;
   display: inline-block;
   margin: 0 10px 0 0;
-  background-image: url(/../../Icon/icons8-javascript-64.png);
+  background-image: url(Icon/icons8-javascript-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -640,7 +640,7 @@ main .projekt-cube .box-container .box6 {
   height: 15px;
   display: inline-block;
   margin: 0 20px 0 0;
-  background-image: url(/../../Icon/icons8-nachricht-64.png);
+  background-image: url(../../Icon/icons8-nachricht-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -657,7 +657,7 @@ main .projekt-cube .box-container .box6 {
   height: 15px;
   display: inline-block;
   margin: 0 20px 0 0;
-  background-image: url(/../../Icon/icons8-google-maps-64.png);
+  background-image: url(/../Icon/icons8-google-maps-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -671,7 +671,7 @@ main .projekt-cube .box-container .box6 {
   height: 15px;
   display: inline-block;
   margin: 0 20px 0 0;
-  background-image: url(/../../Icon/icons8-github-64.png);
+  background-image: url(../Icon/icons8-github-64.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
