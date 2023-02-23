@@ -619,6 +619,9 @@ main .projekt-cube .box-container .box6 {
   padding-top: 80px;
   margin: auto;
 }
+.kontakt-impressum h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
 .kontakt-impressum div .kontakt-telefon::before {
   padding: 0.5em;
   content: "";
