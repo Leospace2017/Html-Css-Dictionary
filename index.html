@@ -8,12 +8,12 @@
     <link rel="icon" href="Icon/icons8-code-64.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Yan's Projekt</title>
+    <title>Yan's Projekte</title>
 </head>
 <body>
-
+    <button id="switch">Swap</button>
     <div id="container">
-        <nav id="navi">
+        <nav id="navi" style="display:none">
             <div class="navi-container navi-puls">
                 
                 <h2 class="navi-kreis"><p></p></h2>
@@ -21,6 +21,20 @@
                     <li class="navi-home"><a href="#skills">Home</a> </li>
                     <li class="navi-projekt"><a href="#projekt">Projekt</a> </li>
                     <li class="navi-kontakt"><a href="#kontakt">Kontakt</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="navi2">
+            <div class="navi-container">
+                <div class="navi-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="navi-bar">
+                    <li class="navi-home"><a href="#skills">Home</a></li>
+                    <li class="navi-projekt"><a href="#projekt">Projekt</a></li>
+                    <li class="navi-kontakt"><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +52,7 @@
                 <div class="skill-html fa ">Html</div>
                 <div class="skill-css fa">css</div>
                 <div class="skill-sass fa">Sass</div>
-                <div class="skill-bootstrap fa">Bootstrap</div>
+                <!-- <div class="skill-bootstrap fa">Bootstrap</div> -->
                 <div class="skill-javascript fa">Javascript</div>
                 <div class="skill-react fa">React</div>
                 <div class="skill-node fa">Node</div>
@@ -97,6 +111,6 @@
     </div>
 
 
-        
+        <script src="main.js"></script>
 </body>
 </html>

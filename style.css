@@ -513,6 +513,96 @@ footer {
     opacity: 0.3;
   }
 }
+#navi2 {
+  position: fixed;
+  inset: 0.5rem 1rem auto auto;
+  height: 150px;
+  width: 80px;
+  border-radius: 50%;
+  z-index: 10;
+}
+#navi2 .navi-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#navi2 .navi-container .navi-btn {
+  height: 50px;
+}
+#navi2 .navi-container .navi-btn div {
+  margin: 10px 0 0 0;
+  width: 50px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease-in-out;
+}
+#navi2 .navi-container .navi-btn:hover :nth-child(1) {
+  transform: translate(14px, 5px) rotate(60deg);
+}
+#navi2 .navi-container .navi-btn:hover :nth-child(2) {
+  transform: translate(-13px, -8px) rotate(-60deg);
+}
+#navi2 .navi-container .navi-bar {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+#navi2 .navi-container .navi-bar li a {
+  color: black;
+  padding: 0.3rem;
+  font-size: large;
+  font-weight: bold;
+}
+#navi2 .navi-container .navi-bar li:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  color: black;
+}
+#navi2 .navi-container:hover .navi-bar {
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  #navi2 {
+    position: fixed;
+    inset: 0.5rem 1rem auto auto;
+    height: 40px;
+    width: 60%;
+  }
+  #navi2 .navi-container {
+    height: 100%;
+    width: 100%;
+  }
+  #navi2 .navi-container .navi-btn {
+    display: none;
+  }
+  #navi2 .navi-container .navi-bar {
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #navi2 .navi-container .navi-bar li {
+    line-height: 40px;
+  }
+  #navi2 .navi-container:hover .navi-bar {
+    display: flex;
+  }
+}
+#switch {
+  position: fixed;
+  inset: 50% 1rem auto auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 20;
+}
+#switch:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: red;
+}
+
 main {
   height: 100%;
   width: 100%;
@@ -704,4 +794,6 @@ main .projekt-cube .box-container .box6 {
     margin-left: 10%;
   }
 }
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+
+
+/*# sourceMappingURL=style.css.map */
