@@ -1,0 +1,24 @@
+/* Farbe */
+$first-color: #00293C;
+$second-color:#1E656D;
+$third-color:#F1F3CE;
+$forth-color: rgb(163, 94, 94);
+
+/* Schriftgröße */
+$font-size-normal: clamp(1rem ,2.5vw, 2rem );
+$font-size-medium: clamp(1.5rem, 2.8vw, 2.3rem);
+$font-size-header: clamp(2rem, 3vw, 3rem);
+
+
+
+/* BIlder */
+$logo-size: clamp(350px, 75%, 800px);
+
+
+
+/* Responsive */
+$mobile: 320px; 
+$tablet: 481px;
+$desktop: 1025px;
+
+

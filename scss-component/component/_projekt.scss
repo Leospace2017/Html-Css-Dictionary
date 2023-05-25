@@ -1,0 +1,113 @@
+@use "../variable" as *;
+@use "../function" as *;
+
+main {
+    @include max-div;
+    color: white;
+    display: grid;
+    grid-template: repeat(6,1fr)/none;
+    justify-content: center;
+    background: linear-gradient(0.5turn,$first-color,blue);
+    
+    
+    .projekt-cube {
+      display: grid;
+      width: 200px;
+      grid-area: 6/1/6/1;
+      .box-container {
+        place-self: bottom center;
+        @include dice3d(200px);
+        transform: rotate3d(1, -1, -1, 5.2turn);
+        transition: all 1s ease;
+  
+        &:hover {
+          transform: rotateX(5turn) rotateY(5turn);
+        }
+  
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+          top: 50%;
+          left: 50%;
+          translate: -50% -50%;
+          text-align: center;
+          line-height: 200px;
+          font-size: 4rem;
+          display: block;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+        }
+  
+        .box1 {
+          background-color: rgb(red, 0.7);
+          transform: translateZ(100px);
+        }
+  
+        .box2 {
+          background-color: rgb(blue, 0.7);
+          transform: rotateY(180deg) translateZ(100px);
+        }
+  
+        .box3 {
+          background-color: rgb(green, 0.7);
+          transform: rotateY(90deg) translateZ(100px);
+        }
+  
+        .box4 {
+          background-color: rgb(yellow, 0.7);
+          transform: rotateY(-90deg) translateZ(100px);
+        }
+  
+        .box5 {
+          background-color: rgb(orange, 0.7);
+          transform: rotateX(90deg) translateZ(100px);
+        }
+  
+        .box6 {
+          background-color: rgb(purple, 0.7);
+          transform: rotateX(-90deg) translateZ(100px);
+        }
+      }
+    }
+  }
+  #projekt{
+  
+    div{
+      place-self:center center;
+      display: grid;
+      place-items: center center;
+      a{
+        color: orange;
+        &:hover{
+          color: $forth-color;
+        }
+      }
+      
+      h4{
+        font-size: $font-size-header;
+      }
+    }
+  
+  }
+  
+  /* Desktop Main */
+  @media (min-width : $desktop)
+  {
+    main {
+        display: grid;
+        grid:1fr 1fr/1fr 1fr;
+  
+  
+        .projekt-cube {
+          display: grid;
+          @include max-div(200px,200px);
+          place-self: center center;
+          position: absolute;
+      
+      }
+    }
+  }

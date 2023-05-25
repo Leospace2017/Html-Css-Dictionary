@@ -1,0 +1,101 @@
+@use "../variable.scss" as *;
+@use "../function.scss" as *;
+
+#navi2{
+    @include fixed-position(0.5rem 1rem auto auto);
+    @include max-div(80px,150px,true);
+    z-index: 10;
+
+    .navi-container{
+        @include max-div();
+        position:relative;
+        .navi-btn{
+            height:50px;
+            div{
+                margin: 10px 0 0 0;
+                width: 50px;
+                border-bottom: 3px solid black;
+                transition: all .5s ease-in-out;
+            }
+            &:hover{
+                :nth-child(1){
+                    transform:translate(14px,5px) rotate(60deg);
+                }
+                :nth-child(2){
+                    transform:translate(-13px,-8px) rotate(-60deg);
+                }
+            }
+            
+        }
+
+        .navi-bar {
+            display: none;
+            @include max-div();
+            li{
+                a{
+                    color:black;
+                    padding: .3rem;
+                    font-size: large;
+                    font-weight: bold;
+                }
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 10px;
+                    color:black;
+                }
+            }
+            
+        }
+        &:hover{
+            .navi-bar{
+                display: block;
+
+            }
+        }
+    }
+}
+
+
+@media (min-width:$desktop) {
+    #navi2{
+        @include fixed-position(0.5rem 1rem auto auto);
+        @include max-div(60%,40px);
+        .navi-container{
+            @include max-div();
+            .navi-btn{
+                display:none;
+            }
+            .navi-bar{
+                display: block;
+                @include max-div();
+                display: flex;
+                justify-content: space-around;
+                li{
+                    line-height: 40px;
+                }
+                
+                
+            }
+            &:hover{
+                .navi-bar{
+                    display: flex;
+    
+                }
+            }
+
+        }
+    }
+}
+
+
+#switch{
+    @include fixed-position(50% 1rem auto auto);
+    @include max-div(50px,50px,true);
+    z-index: 20;
+    &:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        color: red;
+    }
+
+}
