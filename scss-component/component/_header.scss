@@ -111,7 +111,7 @@
         background-color: transparent;
       }
       &:hover::after{
-        content: "\f005 \f005 \f005 \f005 \f5c0";
+        content: "\f005 \f005 \f005 \f005";
         font-family: "Font Awesome 6 Free";
         position: absolute;
         bottom:10px;
@@ -156,6 +156,25 @@
         color: black;
       }
     }
+    .skill-tailwindcss{
+      &::before{
+        @include icon-before(0 10px 0 0);
+
+        background-image: url(Icon/icons8-tailwind-css-64.png);
+        @include background-config;  
+        background-color: transparent;
+
+      }
+      &:hover::after{
+        content: "\f005 \f005 \f005";
+        font-family: "Font Awesome 6 Free";
+        position: absolute;
+        bottom:10px;
+        left:50%;
+        translate: -50%;
+        color: black;
+      }
+    }
     .skill-javascript{
       &::before{
         @include icon-before(0 10px 0 0);
@@ -166,7 +185,7 @@
 
       }
       &:hover::after{
-        content: "\f005 \f005 \f5c0";
+        content: "\f005 \f005 \f005 \f5c0";
         font-family: "Font Awesome 6 Free";
         position: absolute;
         bottom:10px;
@@ -185,7 +204,7 @@
 
       }
       &:hover::after{
-        content: "\f005 \f5c0";
+        content: "\f005 \f005";
         font-family: "Font Awesome 6 Free";
         position: absolute;
         bottom:10px;
@@ -204,7 +223,7 @@
 
       }
       &:hover::after{
-        content: "\f005";
+        content: "\f005 \f005";
         font-family: "Font Awesome 6 Free";
         position: absolute;
         bottom:10px;
@@ -223,7 +242,7 @@
 
       }
       &:hover::after{
-        content: " \f005";
+        content: " \f005 \f005";
         font-family: "Font Awesome 6 Free";
         position: absolute;
         bottom:10px;
