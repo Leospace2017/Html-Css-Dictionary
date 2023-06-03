@@ -269,7 +269,7 @@ footer {
   background-color: transparent;
 }
 .skills-set .skill-react:hover::after {
-  content: "\f005\f005";
+  content: "\f005\f005\f5c0";
   font-family: "Font Awesome 6 Free";
   position: absolute;
   bottom: 10px;
@@ -299,50 +299,6 @@ footer {
   translate: -50%;
   color: black;
 }
-.skills-set .skill-npm::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  margin: 0 10px 0 0;
-  background-image: url(Icon/icons8-npm-64.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: tomato;
-  background-color: transparent;
-}
-.skills-set .skill-npm:hover::after {
-  content: " \f005\f005";
-  font-family: "Font Awesome 6 Free";
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  translate: -50%;
-  color: black;
-}
-.skills-set .skill-firebase::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  margin: 0 10px 0 0;
-  background-image: url(Icon/icons8-firebase-64.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: tomato;
-  background-color: transparent;
-}
-.skills-set .skill-firebase:hover::after {
-  content: "\f5c0";
-  font-family: "Font Awesome 6 Free";
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  translate: -50%;
-  color: black;
-}
 .skills-set .skill-mongoDB::before {
   content: "";
   width: 25px;
@@ -358,28 +314,6 @@ footer {
 }
 .skills-set .skill-mongoDB:hover::after {
   content: "\f5c0";
-  font-family: "Font Awesome 6 Free";
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  translate: -50%;
-  color: black;
-}
-.skills-set .skill-terminal::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  margin: 0 10px 0 0;
-  background-image: url(Icon/icons8-bash-64.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: tomato;
-  background-color: transparent;
-}
-.skills-set .skill-terminal:hover::after {
-  content: "\f005\f005";
   font-family: "Font Awesome 6 Free";
   position: absolute;
   bottom: 10px;
